@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FruitCardView: View {
-    // MARK: - PROPERTIES
+
     private let shadowColor = Color(red: 0, green: 0, blue: 0, opacity: 0.15)
+
+    // MARK: - PROPERTIES
+    @State private var isAnimating = false
 
     // MARK: - BODY
     var body: some View {
@@ -22,6 +25,7 @@ struct FruitCardView: View {
                     .shadow(
                         color: shadowColor,
                         radius: 8, x: 6, y: 8)
+                    .scaleEffect(isAnimating ? 1 : 0.6)
                 // FRUIT: TITLE
                 Text("Blueberry")
                     .foregroundColor(.white)
@@ -37,7 +41,12 @@ struct FruitCardView: View {
                 // BUTTON: START
                 StartButtonView()
             } //: VSTACK
-        } //: ZSTACK
+        }
+        .onAppear(perform: {
+            withAnimation(.easeOut(duration: 0.5)) {
+                isAnimating = true
+            }
+        })
         .frame(minWidth: 0,
                maxWidth: .infinity,
                minHeight: 0,
@@ -50,6 +59,7 @@ struct FruitCardView: View {
             startPoint: .top,
             endPoint: .bottom))
         .cornerRadius(20)
+        .padding(.horizontal, 20.0) //: ZSTACK
     }
 }
 // MARK: - PREVIEW
