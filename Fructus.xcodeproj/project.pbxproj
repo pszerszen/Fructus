@@ -51,8 +51,10 @@
 		861E77F82732A7F000E02548 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				861E77F92732A7F000E02548 /* FructusApp.swift */,
-				861E77FB2732A7F000E02548 /* ContentView.swift */,
+				8652E4672732C70F00F4D542 /* App */,
+				8652E4682732C71E00F4D542 /* Data */,
+				8652E4692732C72800F4D542 /* Model */,
+				8652E46A2732C73000F4D542 /* View */,
 				861E77FD2732A7F200E02548 /* Assets.xcassets */,
 				861E77FF2732A7F200E02548 /* Preview Content */,
 			);
@@ -65,6 +67,36 @@
 				861E78002732A7F200E02548 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8652E4672732C70F00F4D542 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				861E77FB2732A7F000E02548 /* ContentView.swift */,
+				861E77F92732A7F000E02548 /* FructusApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8652E4682732C71E00F4D542 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8652E4692732C72800F4D542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8652E46A2732C73000F4D542 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
