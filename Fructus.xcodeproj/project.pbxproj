@@ -14,6 +14,7 @@
 		8652E46C2732C78D00F4D542 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652E46B2732C78D00F4D542 /* FruitCardView.swift */; };
 		8652E46E2732CC3400F4D542 /* FruitsData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8652E46D2732CC3400F4D542 /* FruitsData.txt */; };
 		8652E4702732CD2600F4D542 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652E46F2732CD2600F4D542 /* StartButtonView.swift */; };
+		8652E4722732D23000F4D542 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652E4712732D23000F4D542 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8652E46B2732C78D00F4D542 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		8652E46D2732CC3400F4D542 /* FruitsData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FruitsData.txt; sourceTree = "<group>"; };
 		8652E46F2732CD2600F4D542 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		8652E4712732D23000F4D542 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				861E77FB2732A7F000E02548 /* ContentView.swift */,
 				861E77F92732A7F000E02548 /* FructusApp.swift */,
+				8652E4712732D23000F4D542 /* OnboardingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				8652E46C2732C78D00F4D542 /* FruitCardView.swift in Sources */,
 				8652E4702732CD2600F4D542 /* StartButtonView.swift in Sources */,
 				861E77FC2732A7F000E02548 /* ContentView.swift in Sources */,
+				8652E4722732D23000F4D542 /* OnboardingView.swift in Sources */,
 				861E77FA2732A7F000E02548 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
