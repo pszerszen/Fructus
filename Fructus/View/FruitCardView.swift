@@ -66,7 +66,7 @@ struct FruitCardView: View {
 
 struct FruitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitCardView(fruit: Fruit(title: "Blueberry", headline: "Blueberries are sweet, nutritious and wildly popular fruit all over the world.", description: "long description...", nutrition: []))
+        FruitCardView(fruit: fruitsData[0])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }

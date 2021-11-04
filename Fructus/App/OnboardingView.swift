@@ -13,9 +13,7 @@ struct OnboardingView: View {
     // MARK: - BODY
     var body: some View {
         TabView {
-            ForEach(fruitsData) { fruit in
-                FruitCardView(fruit: fruit)
-            }
+            ForEach(fruitsData) { FruitCardView(fruit: $0) }
 
         } //: TABVIEW
         .tabViewStyle(PageTabViewStyle())

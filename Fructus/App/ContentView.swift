@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - PROPERTIES
+
+
+    // MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(fruitsData) { fruit in
+                    FruitRowView(fruit: fruit)
+                        .padding(.vertical)
+                }
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.sizeThatFits)
     }
 }
