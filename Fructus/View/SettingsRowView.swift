@@ -15,19 +15,23 @@ struct SettingsRowView: View {
     var linkDestination: String? = nil
 
     var body: some View {
-        HStack {
-            Text(name)
-                .foregroundColor(.gray)
-            Spacer()
-            if let content = content {
-                Text(content)
-            } else if let linkLabel = linkLabel,
-                      let linkDestination = linkDestination {
-                Link(linkLabel, destination: URL(string: "https://\(linkDestination)")!)
-                Image(systemName: "arrow.up.right.square")
-                    .foregroundColor(.pink)
-            } else {
-                EmptyView()
+        VStack {
+            Divider()
+                .padding(.vertical, 4.0)
+            HStack {
+                Text(name)
+                    .foregroundColor(.gray)
+                Spacer()
+                if let content = content {
+                    Text(content)
+                } else if let linkLabel = linkLabel,
+                          let linkDestination = linkDestination {
+                    Link(linkLabel, destination: URL(string: "https://\(linkDestination)")!)
+                    Image(systemName: "arrow.up.right.square")
+                        .foregroundColor(.pink)
+                } else {
+                    EmptyView()
+                }
             }
         }
     }
