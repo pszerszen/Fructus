@@ -14,10 +14,13 @@ struct Fruit: Identifiable {
     var image: String {
         return title.lowercased()
     }
+    var lightColor: Color {
+        return Color("Color\(title)Light")
+    }
+    var darkColor: Color {
+        Color("Color\(title)Dark")
+    }
     var gradientColors: [Color] {
-        let lightColor = Color("Color\(title)Light")
-        let darkColor = Color("Color\(title)Dark")
-        
         return [lightColor, darkColor]
     }
     var description: String

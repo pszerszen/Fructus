@@ -12,7 +12,44 @@ struct FruitDetailView: View {
     var fruit: Fruit
 
     var body: some View {
-        Text(fruit.title)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .center, spacing: 20) {
+                    // MARK: - HEADER
+                    FruitHeaderView(fruit: fruit)
+                    VStack(alignment: .leading, spacing: 20.0) {
+                        // MARK: - TITLE
+                        Text(fruit.title)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(fruit.darkColor)
+
+                        // MARK: - HEADLINE
+                        Text(fruit.headline)
+                            .font(.headline)
+                            .multilineTextAlignment(.leading)
+
+                        // MARK: - NUTRIENTS
+
+                        // MARK: - SUBHEADER
+                        Text("Learn more about \(fruit.title)".uppercased())
+                            .fontWeight(.bold)
+                            .foregroundColor(fruit.lightColor)
+
+                        // MARK: - DESCRIPTION
+                        Text(fruit.description)
+                            .multilineTextAlignment(.leading)
+
+                        // MARK: - LINK
+                    }
+                    .padding(.horizontal, 20.0)
+                    .frame(maxWidth: 640, alignment: .center)
+                }
+                .navigationBarTitle(fruit.title, displayMode: .inline)
+                .navigationBarHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            }
+            .edgesIgnoringSafeArea(.top)
+        }
     }
 }
 
