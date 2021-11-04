@@ -21,6 +21,7 @@
 		86BF91842733F429000E7100 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF91832733F429000E7100 /* FruitHeaderView.swift */; };
 		86BF91862733F96B000E7100 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF91852733F96B000E7100 /* SourceLinkView.swift */; };
 		86BF91882733FC82000E7100 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF91872733FC82000E7100 /* FruitNutrientsView.swift */; };
+		86BF918A27340F11000E7100 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF918927340F11000E7100 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		86BF91832733F429000E7100 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		86BF91852733F96B000E7100 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		86BF91872733FC82000E7100 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
+		86BF918927340F11000E7100 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				861E77F92732A7F000E02548 /* FructusApp.swift */,
 				8652E4712732D23000F4D542 /* OnboardingView.swift */,
 				86BF91812733E75F000E7100 /* FruitDetailView.swift */,
+				86BF918927340F11000E7100 /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				8652E4722732D23000F4D542 /* OnboardingView.swift in Sources */,
 				8652E4742732D4BA00F4D542 /* Fruit.swift in Sources */,
 				861E77FA2732A7F000E02548 /* FructusApp.swift in Sources */,
+				86BF918A27340F11000E7100 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
