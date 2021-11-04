@@ -40,12 +40,7 @@ struct SettingsView: View {
                     GroupBox(label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")) {
                         Divider()
                             .padding(.vertical, 4.0)
-                        HStack {
-                            Text("Developer")
-                                .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
-                            Spacer()
-                            Text("John / Jane")
-                        }
+                        SettingsRowView(name: "Developer", content: "John / Jane")
                     }
 
                 }
