@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    // MARK: - PROPERTIES
 
-    // MARK: - BODY
     var body: some View {
         TabView {
             ForEach(fruitsData) { FruitCardView(fruit: $0) }

@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    // MARK: - PROPERTIES
 
-
-    // MARK: - BODY
     var body: some View {
         NavigationView {
             List {
-                ForEach(fruitsData) { fruit in
-                    FruitRowView(fruit: fruit)
-                        .padding(.vertical)
+                ForEach(fruitsData.shuffled()) { fruit in
+                    NavigationLink {
+                        FruitDetailView(fruit: fruit)
+                    } label: {
+                        FruitRowView(fruit: fruit)
+                            .padding(.vertical, 4)
+                    }
                 }
             }
+            .navigationTitle("Fruits")
         }
     }
 }
