@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FruitDetailView: View {
 
-    var fruit: Fruit
+    let fruit: Fruit
 
     var body: some View {
         NavigationView {
@@ -30,6 +30,7 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
 
                         // MARK: - NUTRIENTS
+                        FruitNutrientsView(fruit: fruit)
 
                         // MARK: - SUBHEADER
                         Text("Learn more about \(fruit.title)".uppercased())

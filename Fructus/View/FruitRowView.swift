@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FruitRowView: View {
     // MARK: - PROPERTIES
-    var fruit: Fruit
+    let fruit: Fruit
 
     // MARK: - BODY
     var body: some View {

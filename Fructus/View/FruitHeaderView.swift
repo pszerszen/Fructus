@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FruitHeaderView: View {
 
-    var fruit: Fruit
+    let fruit: Fruit
 
     @State private var isAnimatingImage = false
 

@@ -14,7 +14,7 @@ struct FruitCardView: View {
     // MARK: - PROPERTIES
     @State private var isAnimating = false
 
-    var fruit: Fruit
+    let fruit: Fruit
 
     // MARK: - BODY
     var body: some View {
